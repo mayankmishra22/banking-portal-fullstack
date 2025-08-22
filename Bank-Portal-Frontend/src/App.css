@@ -1,0 +1,71 @@
+/* Global app styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #121212; /* dark background */
+  color: #ffc0cb;            /* light pink text */
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cards or sections */
+.card {
+  padding: 2em;
+  background-color: #1e1e1e; /* dark grey card */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  color: #ffc0cb; /* pink text */
+}
+
+/* Links */
+a {
+  color: #ffc0cb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #FFD700; /* yellow on hover */
+}
+
+/* "read-the-docs" text */
+.read-the-docs {
+  color: #ffdde1; /* softer pink */
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #222 !important;
+  border-color: #333 !important;
+  color: #ffc0cb !important;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #FFD700 !important;
+  border-color: #b8860b !important;
+  color: #000 !important; /* black text on yellow */
+}
+
+/* Navbar or headers */
+.navbar {
+  background-color: #1c1c1c !important;
+}
+.navbar a {
+  color: #ffc0cb !important;
+}
+.navbar a:hover {
+  color: #FFD700 !important;
+}
+
+/* Toast overrides */
+.Toastify__toast {
+  background-color: #1e1e1e !important;
+  color: #ffc0cb !important;
+}
+.Toastify__toast--success {
+  border-left: 5px solid #FFD700; /* yellow success */
+}
+.Toastify__toast--error {
+  border-left: 5px solid #ff4d6d; /* pink-red error */
+}

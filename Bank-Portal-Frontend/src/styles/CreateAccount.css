@@ -1,0 +1,118 @@
+/* src/components/dashboard/CreateAccount.css */
+
+.create-account-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 2rem auto;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e0e0e0; /* subtle card border */
+}
+
+.create-account-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1a237e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 12px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: #fafafa;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3f51b5;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(63, 81, 181, 0.3);
+}
+
+.form-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background: transparent;
+  padding: 0 4px;
+}
+
+/* Float label on focus or if input has value */
+.form-group.floating input:focus ~ label,
+.form-group.floating select:focus ~ label,
+.form-group.floating.has-value label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3f51b5;
+  background: #fff;
+}
+
+/* Submit button */
+.submit-btn {
+  background: linear-gradient(135deg, #3f51b5, #1a237e);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #5c6bc0, #283593);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(63, 81, 181, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .create-account-card {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}

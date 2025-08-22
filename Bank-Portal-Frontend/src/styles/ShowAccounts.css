@@ -1,0 +1,102 @@
+/* Card look */
+.show-accounts-card {
+  border-radius: 12px;
+  background: rgba(15, 15, 15, 0.95); /* dark glass */
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffc0cb; /* light pink text */
+}
+
+.show-accounts-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.15); /* soft yellow glow */
+}
+
+/* Title */
+.show-accounts-title {
+  font-weight: 600;
+  color: #FFD700; /* yellow */
+}
+
+/* Actions row */
+.show-accounts-actions input {
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #111;
+  color: #ffc0cb; /* pink text */
+}
+
+.show-accounts-actions input:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.3);
+}
+
+/* Table enhancements */
+.show-accounts-table th {
+  background-color: #222;
+  color: #FFD700; /* yellow headers */
+  font-weight: 600;
+}
+
+.show-accounts-table td {
+  vertical-align: middle;
+  color: #ffc0cb; /* light pink text */
+}
+
+.show-accounts-table tr:hover {
+  background-color: rgba(255, 192, 203, 0.1); /* faint pink hover */
+}
+
+/* Empty state */
+.show-accounts-empty {
+  font-style: italic;
+  color: #bbb;
+}
+
+/* Input + button base */
+.form-group input,
+.form-group button {
+  border: 1.5px solid #444;
+  background: #111;
+  color: #ffc0cb;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.3);
+}
+
+/* Floating label styles */
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.95rem;
+  color: #bbb;
+  pointer-events: none;
+  background: #000; /* match dark bg */
+  padding: 0 4px;
+  transition: 0.2s ease all;
+}
+
+/* Float on focus OR when input has value */
+.form-group input:focus + label,
+.form-group label.floated {
+  top: -8px;
+  font-size: 0.8rem;
+  color: #FFD700; /* yellow floating label */
+}
